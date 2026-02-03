@@ -1,0 +1,35 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{background:black;font-family:Arial, sans-serif;overflow:hidden;}
+
+.screen{position:fixed;inset:0;display:none;}
+
+.screen.active{display:block;}
+
+.screen img{width:100%;height:100%;object-fit:cover;}
+
+.menu{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:15px;background:rgba(0,0,0,0.5);}
+
+.menu h1{color:white;font-size:36px;}
+
+.menu button{padding:12px 30px;font-size:18px;}
+
+#game{position:fixed;inset:0;display:none;background-size:cover;}
+
+#hud{position:absolute;top:10px;left:10px;color:white;display:flex;gap:15px;z-index:10;}
+
+#player,#enemy,#cookie{position:absolute;background-size:contain;background-repeat:no-repeat;}
+
+#player{width:60px;height:40px;background-image:url("https://raw.githubusercontent.com/lonny536/sardine-game-assets/refs/heads/main/Sardine.png");}
+
+#enemy{width:80px;height:60px;}
+
+#cookie{width:30px;height:30px;background-image:url("https://raw.githubusercontent.com/lonny536/sardine-game-assets/refs/heads/main/Cookie.png");}
+
+#controls{position:absolute;left:15px;bottom:20px;display:flex;flex-direction:column;gap:5px;}
+
+#controls button{width:60px;height:60px;font-size:24px;}
+
+#endScreen{display:none;text-align:center;}
+
+#restartBtn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);padding:15px 40px;font-size:22px;}

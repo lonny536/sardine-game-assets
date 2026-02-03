@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <body>
+
+<!-- START SCREEN -->
+
+<div id="startScreen" class="screen active">
+
+  <img src="https://raw.githubusercontent.com/lonny536/sardine-game-assets/refs/heads/main/background.png">
+
+  <div class="menu">
+
+    <h1>Sardine Survival</h1>
+
+    <button onclick="startGame()">START</button>
+
+    <button disabled>LOAD</button>
+
+    <button onclick="exitGame()">EXIT</button>
+
+  </div>
+
+</div>
+
+<!-- GAME SCREEN -->
+
+<div id="game">
+
+  <div id="hud">
+
+    <span id="hearts">❤️ 15</span>
+
+    <span id="cookies">🍪 0 / 5</span>
+
+    <span id="stageText">Stage 1</span>
+
+  </div>
+
+  <div id="player"></div>
+
+  <div id="enemy"></div>
+
+  <div id="cookie"></div>
+
+  <!-- CONTROLS -->
+
+  <div id="controls">
+
+    <button onclick="move('up')">▲</button>
+
+    <div>
+
+      <button onclick="move('left')">◀</button>
+
+      <button onclick="move('right')">▶</button>
+
+    </div>
+
+    <button onclick="move('down')">▼</button>
+
+  </div>
+
+</div>
+
+<!-- END SCREEN -->
+
+<div id="endScreen" class="screen">
+
+  <img id="endImage">
+
+  <button id="restartBtn" onclick="restartGame()">RESTART</button>
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
